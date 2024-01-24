@@ -1,0 +1,166 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#game-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+svg {
+  width: 500px;
+  height: 450px;
+  background-color: grey;
+}
+
+.board-line {
+  stroke: black;
+  stroke-width: 0.5;
+}
+
+.board-circle:hover {
+  fill: red;
+  cursor: pointer;
+}
+
+.players-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 500%;
+  
+}
+
+.game-button{
+  width: 100px;
+  height: 45px;
+  background-color: grey;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.game-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.player {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  width: 220px;
+}
+.player img {
+  width: 20px; /* Prilagodite veličinu ikonice prema potrebi */
+  height: 20px;
+  margin-bottom: 5px;
+}
+.player h3 {
+  margin: 0; /* Remove default margin for h3 within .player */
+}
+
+.player-content {
+  display: flex;
+  align-items: center;
+}
+
+.player-info {
+  flex-grow: 1;
+  padding-right: 10px;
+}
+/* Dodajte ovaj stil ako želite dodati neki okvir oko slike */
+.player img.active {
+  border: 2px solid #000; /* Boja kada je igrač aktivan */
+}
+
+/* Dodajte ovaj stil u vaš CSS fajl */
+.player img {
+  width: 100px; /* Prilagodite veličinu ikonice prema potrebi */
+  height: 100px;
+  margin-bottom: 5px;
+}
+
+.player-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.player-info {
+  text-align: left;
+}
+
+.player-balls {
+  display: flex;
+  flex-direction: column;
+}
+
+.ball {
+  width: 10px;
+  height: 10px;
+  background-color: grey; /* Promenite boju prema potrebi */
+  margin-bottom: 5px;
+  cursor: pointer;
+  
+}
+
+
+.ball-icon {
+  width: 40px; /* Prilagodite veličinu loptica prema potrebi */
+  height: 40px;
+  margin-right: 5px; /* Dodajte željeni razmak između loptica */
+}
+
+.white-player,
+.black-player {
+  text-align: center;
+}
+/* Add this CSS to your existing styles */
+
+.time-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* Adjust the gap as needed */
+  margin-bottom: 400px;
+}
+
+.time-controls button {
+  font-size: 16px;
+  background-color: grey; /* Change the background color as needed */
+  color: black;
+  border: none;
+  cursor: pointer;
+  width: 120px;
+  margin-right: 10px; /* Adjust the margin to add space between buttons */
+}
+
+
+.time-controls button:hover {
+  background-color: rgb(109, 169, 196); /* Change the hover background color as needed */
+}
+
+.time-controls p {
+  font-size: 14px;
+  margin: 0;
+}
+#getBestMoveButton {
+  /* Your specific styles for this button */
+  /* For example, changing the background color and font size */
+  background-color: #007BFF; /* Blue background */
+  font-size: 16px;
+  width: 150px;
+}
+
+#getBestMoveButton:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
